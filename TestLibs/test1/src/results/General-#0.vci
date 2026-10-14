@@ -1,0 +1,29 @@
+file 3431 1791832701                                            
+version 3
+run General-0-20261012-22:05:18-27729
+attr configname General
+attr datetime 20261012-22:05:18
+attr datetimef 20261012-220518
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network QueueingNetwork
+attr processid 27729
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network QueueingNetwork
+config sim-time-limit 10s
+config **.meanGenTime 0.25
+config **.volume 3
+
+vector 0 QueueingNetwork.queue "Queue State" ETV
+vector 1 QueueingNetwork.queue "Discarded Requests Number" ETV
+0	631 1389 2 148 0 9.68972778414 65 0 3 136 356
+1	2020 1410 2 148 0 9.68972778414 65 0 20 492 6088
+
