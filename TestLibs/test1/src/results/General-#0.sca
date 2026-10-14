@@ -1,0 +1,44 @@
+version 3
+run General-0-20261012-22:05:18-27729
+attr configname General
+attr datetime 20261012-22:05:18
+attr datetimef 20261012-220518
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network QueueingNetwork
+attr processid 27729
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network QueueingNetwork
+config sim-time-limit 10s
+config **.meanGenTime 0.25
+config **.volume 3
+
+par QueueingNetwork.generator typename "\"test1.Generator\""
+par QueueingNetwork.generator meanGenTime 0.25
+par QueueingNetwork.queue typename "\"test1.Queue\""
+par QueueingNetwork.queue volume 3
+scalar QueueingNetwork.queue discStat:count 20
+attr recordingmode count
+attr source curDiscard
+scalar QueueingNetwork.queue lenStat:max 3
+attr recordingmode max
+attr source curLen
+scalar QueueingNetwork.queue lenStat:timeavg 2.1261177349356
+attr recordingmode timeavg
+attr source curLen
+par QueueingNetwork.server[0] typename "\"test1.Server\""
+par QueueingNetwork.server[0] meanServTime 1
+par QueueingNetwork.server[1] typename "\"test1.Server\""
+par QueueingNetwork.server[1] meanServTime 1
+par QueueingNetwork.server[2] typename "\"test1.Server\""
+par QueueingNetwork.server[2] meanServTime 1
+par QueueingNetwork typename "\"test1.QueueingNetwork\""
+
